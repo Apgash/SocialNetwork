@@ -1,4 +1,4 @@
-import { Schema, model, Types } from 'mongoose';
+import { Schema, Types } from 'mongoose';
 
 const reactionSchema = new Schema({
     reactionId: {
