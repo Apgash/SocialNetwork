@@ -16,6 +16,7 @@ router.route('/:id')
 
 router.route('/:thoughtId/reactions')
     .post(thoughtController.addReaction)
-    .delete('/:reactionId', thoughtController.deleteReaction);
+    router.route('/:thoughtId/reactions/:reactionId')
+        .delete(thoughtController.deleteReaction);
 
 export default router;
